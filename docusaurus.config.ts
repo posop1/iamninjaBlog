@@ -99,7 +99,10 @@ const config = {
             type: 'dropdown',
             label: 'Ресурсы',
             position: 'left',
-            items: [{ label: 'База знаний', type: 'doc', docId: 'intro' }],
+            items: [
+              { label: 'База знаний', type: 'doc', docId: 'intro' },
+              { label: 'Обо мне', to: 'about' },
+            ],
           },
           {
             href: 'https://github.com/posop1/iamninjaBlog',
