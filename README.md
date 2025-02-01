@@ -1,41 +1,17 @@
-# Website
-
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-### Installation
+## Короче в начале каждого поста нужно добавлять
 
 ```
-$ yarn
+---
+title: GitHub вместо Steam Workshop для Garry's Mod
+date: '2021-04-05 14:23:00'
+tags: [gmdonate, garrysmod, git, github, lua, steam]
+---
 ```
 
-### Local Development
+## Для того чтобы разделить пост по превью(что будет на главной странице а что нет) используем
 
 ```
-$ yarn start
+<!-- truncate -->
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Для удобства конечно можете разделять файлы на папки и т.д.

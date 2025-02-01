@@ -93,17 +93,17 @@ const config = {
             type: 'dropdown',
             label: 'Блог',
             position: 'left',
-            items: [{ label: 'Главная', to: '/' }],
-          },
-          {
-            type: 'dropdown',
-            label: 'Ресурсы',
-            position: 'left',
             items: [
-              { label: 'База знаний', type: 'doc', docId: 'intro' },
-              { label: 'Обо мне', to: 'about' },
+              { label: 'Главная', to: '/' },
+              { label: 'Все по годам', to: 'archive' },
             ],
           },
+          {
+            label: 'Обо мне',
+            position: 'left',
+            to: 'about',
+          },
+
           {
             href: 'https://github.com/posop1/iamninjaBlog',
             position: 'right',
