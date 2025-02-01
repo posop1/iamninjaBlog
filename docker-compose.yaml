@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - PORT=${PORT}
+    restart: unless-stopped
+    container_name: iamninja-blog
+    networks:
+      - default
+    ports:
+      - '3335'

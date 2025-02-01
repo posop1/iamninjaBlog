@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+import 'dotenv/config';
 
 const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
 const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
@@ -8,35 +9,18 @@ const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
 const config = {
   title: 'Iamninja Blog',
   favicon: 'img/favicon.webp',
-  // tagline: 'Всякое гиковское',
-  url: 'https://iamninja.ru',
+  url: process.env.URL,
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
-  // onBrokenMarkdownLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
+  organizationName: 'Iamninja',
+  projectName: 'iamninjaBlog',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Iamninja', // Usually your GitHub org/user name.
-  projectName: 'iamninjaBlog', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru'],
   },
-
-  // plugins: [
-  //   [
-  //     'docusaurus-plugin-yandex-metrica',
-  //     {
-  //       counterID: '49559035',
-  //     },
-  //   ],
-  // ],
 
   presets: [
     [
@@ -86,7 +70,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.png', // todo webp
+          src: 'img/logo.png',
         },
         items: [
           {
@@ -102,6 +86,11 @@ const config = {
             label: 'Обо мне',
             position: 'left',
             to: 'about',
+          },
+          {
+            label: 'Полезное',
+            position: 'left',
+            to: 'useful',
           },
 
           {
